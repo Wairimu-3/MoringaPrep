@@ -15,3 +15,28 @@
 + As a user I would like to add my own tutorial.
 + As a user I would like to comment on other peoples tutorials.
 + As a user I would like to add a profile photo and bio.
++ As a user I would like to successfully log out
+
+### Technologies Used
+Python3.8
+
+Flask
+
+HTML5
+
+CSS3
+
+Bootstrap
+
+### Setup /Installation Requirements
++ Clone the repo $ git clone
+
+- After cloning, navigate to the project: $ cd news-updates
+
++ Then install all the requirements through pip: $ pip install -r requirements.txt
+
+- Make the file executable: $ chmod +x start.sh
+
++ Run the application: $ ./start.sh
+
+Now navigate to your browser at: local host 5000
