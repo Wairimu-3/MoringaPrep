@@ -11,10 +11,10 @@ class CommentForm(FlaskForm):
     details = TextAreaField('Enter your comments', validators=[Required()])
     submit = SubmitField('Submit')
 
-class BlogForm(FlaskForm):
+class TutorialForm(FlaskForm):
 
-    blog_heading = StringField('Travel Blog Title', validators=[Required()])
-    blog_content = TextAreaField('Blog contents', validators=[Required()])
-    blog_author = StringField('Blog Author', validators=[Required()])
+    tutorial_heading = StringField('Travel Blog Title', validators=[Required()])
+    tutorial_content = TextAreaField('Blog contents', validators=[Required()])
+    tutorial_author = StringField('Blog Author', validators=[Required()])
     submit = SubmitField('Submit')
 
