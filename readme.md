@@ -40,3 +40,10 @@ Bootstrap
 + Run the application: $ ./start.sh
 
 Now navigate to your browser at: local host 5000
+
+### License
+MIT licence
+
+https://choosealicense.com/licenses/mit/
+
+&copy 2020; Margaret Kimani
