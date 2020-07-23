@@ -12,3 +12,6 @@
 + As a user I would like to sign up before creating anything.
 + As a user I would like to login after signing up.
 + As a user I would like to view other tutorials made by others.
++ As a user I would like to add my own tutorial.
++ As a user I would like to comment on other peoples tutorials.
++ As a user I would like to add a profile photo and bio.
