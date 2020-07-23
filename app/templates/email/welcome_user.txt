@@ -1,8 +1,19 @@
 Hello {{user.username}}
-Welcome to Afric- Travel Blog
-We have just seen you have signed up for our blog and want to welcome you to the family. Please enjoy the articles of all your  favourite destinations. 
-You can also add comments to each article and suggest new destinations
+Welcome to Moringa site tutorial
+About us
+Moringa School is a multi-disciplinary coding school committed to closing the skills gap in 
+Africa’s job market by offering high-potential students the necessary technical and professional 
+training in order to compete in a digital, global economy.
 
-Sincerely 
+Founded in 2014 by Audrey Cheng, a Taiwanese-American entrepreneur, 
+Moringa School is creating world-class developers by providing a comprehensive curriculum and
+ an outcome-driven program to motivated, young people in Africa.
 
-The Afri Travel team
+Working at Moringa school
+Moringa School employees work in a fun and collegial startup environment and are surrounded by talented,
+ friendly, intelligent and ambitious professionals who work hard to provide the best student experience
+  in the world. We are committed to our employee’s health and wellness – 
+  we truly believe that our employees need to take care of themselves first. 
+  We understand the value of remote working and support it as needed.
+
+  Welcome to Moringa!!

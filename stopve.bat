@@ -1,1 +1,0 @@
-virtual\Scripts\deactivate.bat

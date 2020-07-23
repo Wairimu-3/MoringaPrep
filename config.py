@@ -4,8 +4,8 @@ class Config:
     '''
     General configuration parent class
     '''
-    SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://pythonuser:pythonuser@localhost/moringatutorial'
+    SECRET_KEY = '2f36c3efdc9a49ab8348612fa4f3fcc4'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:my_postgres_password@localhost/moringa'
     UPLOADED_PHOTOS_DEST = 'app/static/photos'
 
     #Simple MDE configurations

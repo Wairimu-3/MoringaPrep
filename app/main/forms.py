@@ -13,8 +13,8 @@ class CommentForm(FlaskForm):
 
 class TutorialForm(FlaskForm):
 
-    tutorial_heading = StringField('Travel Blog Title', validators=[Required()])
-    tutorial_content = TextAreaField('Blog contents', validators=[Required()])
-    tutorial_author = StringField('Blog Author', validators=[Required()])
+    tutorial_heading = StringField('Tutorial Title', validators=[Required()])
+    tutorial_content = TextAreaField('Tutorial content', validators=[Required()])
+    tutorial_author = StringField('Written by:', validators=[Required()])
     submit = SubmitField('Submit')
 
