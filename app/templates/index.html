@@ -19,23 +19,23 @@
           <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
               <div class="site-heading">
-                <h1>My Africa Travel Blog</h1>
-                <span class="subheading">A Blog Theme by the intrepid African Traveller</span>
+                <h1>Moringa School Tutorials</h1>
+                <span class="subheading">A Tutorial Blog for Prep Students</span>
               </div>
             </div>
           </div>
         </div>
       </header>
-{% for blog in blog_list %}
+{% for tutorial in tutorial_list %}
    
 <div class="col-lg-12 col-md-12 mx-auto">
   <div class="card">
     <div class="post-review">
-      <h3 class="post-title">{{ blog.heading }}</h3>
-      <p class="post-subtitle"><i>{{ blog.content | truncate(350, True)}}</i></p>
+      <h3 class="post-title">{{ tutorial.heading }}</h3>
+      <p class="post-subtitle"><i>{{ tutorial.content | truncate(350, True)}}</i></p>
       <hr />
-      <footer class="blockquote-footer"> - <cite> Posted by: {{ blog.author }} | posted  on: {{blog.posted}}</cite></footer>
-      <a href="/blog/{{blog.id}}" class="btn btn-primary">See more...</a>
+      <footer class="blockquote-footer"> - <cite> Posted by: {{ tutorial.author }} | posted  on: {{tutorial.posted}}</cite></footer>
+      <a href="/tutorial/{{tutorial.id}}" class="btn btn-primary">See more...</a>
       
     </div>
   </div>
@@ -44,7 +44,7 @@
 {% endfor %}
 <hr />
 <p></p>
-<a href="/blog/new/" class="btn btn-success">Add a new Blog</a> 
+<a href="/tutorial/new/" class="btn btn-success">Add a new Tutorial..</a> 
 </div>
 
 <div class="row">

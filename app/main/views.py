@@ -12,7 +12,7 @@ def index():
     '''
     Function to load the index page
     '''
-    tutorial_list = tutorial.query.all()
+    tutorial_list = Tutorial.query.all()
 
        
     return render_template('index.html', tutorial_list=tutorial_list)
@@ -87,9 +87,9 @@ def new_tutorial():
     '''
     Function to allow a user add a new tutorial post
     '''
-    form = tutorialForm()
+    form = TutorialForm()
     if form.validate_on_submit():
-        new_tutorial = tutorial(heading=form.tutorial_heading.data, content=form.tutorial_content.data, author=form.tutorial_author.data)
+        new_tutorial = Tutorial(heading=form.tutorial_heading.data, content=form.tutorial_content.data, author=form.tutorial_author.data)
         db.session.add(new_tutorial)
         db.session.commit()
         return redirect(url_for('main.index'))
@@ -99,7 +99,7 @@ def new_tutorial():
 
 @main.route('/tutorial/<int:id>')
 def single_tutorial(id):
-    tutorial = tutorial.query.get(id)
+    tutorial = Tutorial.query.get(id)
     comments = Comment.query.filter_by(tutorial_id = id).all()
     if tutorial is None:
         abort(404)

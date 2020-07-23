@@ -5,13 +5,13 @@
 
   <div class="row">
     <div class="col-sm-3">
-     <h3>{{ blog.heading}}</h3>
-     <h5>By - {{blog.author}}</h5>
+     <h3>{{ tutorial.heading}}</h3>
+     <h5>By - {{tutorial.author}}</h5>
      <img src="https://source.unsplash.com/random/300x200" alt=" ">
     </div>
 
     <div class="col-sm-9">
-      {{format_blog|safe}}
+      {{format_tutorial|safe}}
       <hr>
       <p><strong>Comments by our readers</strong></p>
       <p></p>
@@ -31,7 +31,7 @@
     </li>
     
 {% endfor %}
-<a href="/blog/comment/new/{{blog.id}}" class="btn btn-success">Add a new comment</a>
+<a href="/tutorial/comment/new/{{tutorial.id}}" class="btn btn-success">Add a new comment</a>
     </div>
     <ul>
     

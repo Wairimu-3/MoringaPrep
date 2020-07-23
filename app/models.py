@@ -5,7 +5,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import datetime
 class Tutorial(db.Model):
     '''
-    Blog class to define blog objects
+    Tutorial class to define tutorial objects
     '''
     __tablename__ = 'tutorials'
 
@@ -16,7 +16,7 @@ class Tutorial(db.Model):
     author = db.Column(db.String(40))
     
     def __repr__(self):
-        return f'Blog {self.heading}'
+        return f'Tutorial {self.heading}'
     
     
 class Comment(db.Model):
@@ -25,7 +25,7 @@ class Comment(db.Model):
     '''
     __tablename__ = 'comments'
     id = db.Column(db.Integer, primary_key=True)
-    blog_id = db.Column(db.Integer)
+    tutorial_id = db.Column(db.Integer)
     details = db.Column(db.String(500))
     posted = db.Column(db.DateTime, default=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
@@ -36,7 +36,7 @@ class Comment(db.Model):
     
     @classmethod
     def get_comments(cls, id):
-        comments = Comment.query.filter_by(blog_id = id).all()
+        comments = Comment.query.filter_by(tutorial_id = id).all()
 
     def __repr__(self):
         return f'Comment {self.details}'
